@@ -7,7 +7,7 @@
 @blanco: #fff;
 @texto-oscuro: #303133;
 @texto-claro: #777;
-@dorado: #b4975a;
+@dorado: #C3191D;
 @gris-claro: #eaeaea;
 
 /*Fuentes*/
@@ -103,7 +103,7 @@ a{
 header{
 
 	.menu-bar-pc{
-		background: @blanco;
+		background: #000000;
 		width: 100%;
 		position: fixed;
 		z-index: 99;
@@ -114,7 +114,7 @@ header{
 		justify-content: space-between;
 		align-items: center;
 		min-height: 5.875rem;
-		border-bottom: 1px solid @gris-claro;
+		border-bottom: 1px solid @texto-oscuro;
 
 		.logo{
 			max-width: 3.125rem;
@@ -124,18 +124,26 @@ header{
 
 			a{
 				padding: 0 0.5625rem;
+				color: @blanco;
+				&:hover{
+					color: fade(@blanco, 50%);
+				}
 			}
 		}
 
 		.top-redes{
 			a{
 				padding: 0 0.5625rem;
+				color: @blanco;
+				&:hover{
+					color: fade(@blanco, 50%);
+				}
 			}
 		}
 	}
 
 	.menu-bar-movil{
-		background: @blanco;
+		background: #000000;
 		width: 100%;
 		position: fixed;
 		z-index: 99;
@@ -146,7 +154,7 @@ header{
 		justify-content: space-between;
 		align-items: center;
 		min-height: 5.875rem;
-		border-bottom: 1px solid @gris-claro;
+		border-bottom: 1px solid @texto-oscuro;
 
 		.logo{
 			max-width: 3.125rem;
@@ -155,13 +163,19 @@ header{
 		.burger-menu{
 			cursor: pointer;
 			font-size: 2.1875rem;
+			i{
+				color: @gris-claro;
+				&:hover{
+					color: fade(@blanco, 50%);
+				}
+			}
 		}
 
 		.slideMenu{
 			position: fixed;
 			top: 5.875rem;
 			left: -80%;
-			background: @blanco;
+			background: #000000;
 			text-align: center;
 			padding:1.25rem 2.25rem;
 			width: 80%;
@@ -177,6 +191,10 @@ header{
 				margin-bottom: 0.625rem;
 				a{
 					padding: 0 0.5625rem;
+					color: @blanco;
+					&:hover{
+						color: fade(@blanco, 50%);
+					}
 				}
 			}
 
@@ -184,7 +202,11 @@ header{
 				a{
 					display: block;
 					padding: 0.625rem 0;
-					border-top: 1px solid @gris-claro;
+					color: @blanco;
+					border-top: 1px solid @texto-oscuro;
+					&:hover{
+						color: fade(@blanco, 50%);
+					}
 				}
 			}
 		}
@@ -342,7 +364,7 @@ header{
 		}
 	}
 
-	.chef{
+	.nuestras_insta{
 		background: @negro-custom;
 		padding: 5.625rem 0;
 
@@ -407,7 +429,7 @@ header{
 		}
 	}
 
-	.menu-platos{
+	.menu-servicios{
 		padding: 5.625rem 0;
 
 		.container{
@@ -497,7 +519,7 @@ header{
 						.col.der{
 							width: 30%;
 							text-align: center;
-							font-size: 2.1875rem;
+							font-size: 1rem;
 						}
 					}
 				}
@@ -513,6 +535,7 @@ header{
 			background-image: url('../img/contacto-bg.jpg');
 			background-size: cover;
 			background-position: center;
+			background-repeat: no-repeat;
 
 			.overlay{
 				position: absolute;
